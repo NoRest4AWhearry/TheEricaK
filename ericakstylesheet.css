@@ -1,0 +1,337 @@
+@charset "utf-8";
+/*Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Colors
+Gold = #!eeb54c
+Dark Gold = #!b97234
+*/
+/* General CSS */
+body {
+	background:url(img/image_4.jpeg) no-repeat fixed #000;
+	margin: 0;
+	font: normal normal normal 18px/1.3em jura, sans-serif;
+	color: #D1D19F;
+	scrollbar-base-color: #b97234;
+	scrollbar-3dlight-color: #b97234;
+	scrollbar-highlight-color: #b97234;
+	scrollbar-track-color: #D1D19F ;
+	scrollbar-arrow-color: black;
+	scrollbar-shadow-color: #b97234;
+	scrollbar-dark-shadow-color: #b97234;	
+}
+::-webkit-scrollbar { width: 15px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #D1D19F ; height:38px; }
+::-webkit-scrollbar-track {  background-color: #D1D19F ;}
+::-webkit-scrollbar-track-piece { background-color: #b97234;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #D1D19F ; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #D1D19F ;}
+::-webkit-resizer { background-color: #D1D19F ;}
+
+p {color: #fff;}
+h1{font-size: 42px;}
+h2{font-size: 32px;}
+h3{font-size: 28px;}
+h4{font-size: 22px;}
+h4{font-size: 20px;}
+h6{font-size: 16px;}
+header {
+	position:fixed;
+	top:0;
+	width: 100%;
+	height: 38px;
+	background:#D1D19F ;
+	box-shadow: #111 0px 5px 10px;
+	-moz-box-shadow:#111 0px 5px 10px;
+	-o-box-shadow:#111 0px 5px 10px;
+	-webkit-box-shadow:#111 0px 5px 10px;
+	z-index:3;
+}
+header #headerWrap {
+	width:960px;
+	margin:0 auto;
+	height:100%;
+}
+#headerLogo{
+	background: url(img/ericaKsignature72.png) #D1D19F  no-repeat;
+	background-position:center top;
+	position: absolute;
+	width: 200px;
+	height:105px;
+	border-bottom-left-radius: 145px;
+	border-bottom-right-radius: 145px;
+	top: 0px;
+}
+header #headerWrap nav {
+	text-align:left;
+	font-weight: 700;
+	font-size:18px;
+	margin-left: 195px;
+	float:left;
+}
+header #headerWrap nav ul{
+	list-style:none;
+	padding:10px 0;
+}
+header #headerWrap nav ul li{
+	display:inline;
+}
+header #headerWrap nav ul li a{
+	color: #fff;
+	padding: 0 20px;
+	text-decoration: none;
+	-webkit-transition: all .4s ease-in 0s;
+	-moz-transition: all .4s ease-in 0s;
+	-ms-transition: all .4s ease-in 0s;
+	-o-transition: all .4s ease-in 0s;
+	transition: all .4s ease-in 0s;
+}
+header #headerWrap nav ul li a:hover{
+	color: #b97234;
+}
+header #headerWrap #socialNav {
+	text-align:left;
+	width: 224px;
+	float: right;
+}
+header #headerWrap #socialNav ul{
+	list-style:none;
+	padding:2px 0;
+}
+header #headerWrap #socialNav ul li{
+	display:inline;
+}
+header #headerWrap #socialNav ul li a{
+	color: #fff;
+	padding: 0 20px;
+	text-decoration: none;
+}
+body#home a#homenav,
+body#about a#aboutnav,
+body#portfol a#portnav,
+body#contact a#connav {
+	color: #b97234;
+}
+#contentWrap {
+	top: 100px;
+	width:960px;
+	margin:70px auto;
+}
+#contentWrap #mainContent {
+	margin-left: 15px;
+	width: 600px;
+	height: 100%;
+	padding-top: 50px;
+}
+#groupedWords {
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 30px;
+	padding: 20px;
+}
+#groupedWords h1, #groupedWords p {
+	padding: 20px 0;
+}
+/*footer*/
+footer {
+	position: fixed;
+	bottom:0;
+	width: 100%;
+	background:#D1D19F ;
+	z-index:3;
+	box-shadow: #111 0px -5px 10px;
+	-moz-box-shadow:#111 0px -5px 10px;
+	-o-box-shadow:#111 0px -5px 10px;
+	-webkit-box-shadow:#111 0px -5px 10px;
+}
+footer #footerWrap {
+	width:960px;
+	margin:0 auto;
+}
+footer #footerWrap nav {
+	text-align: center;
+	font-weight: 700;
+	font-size:14px;
+	width: 960px;
+	float:left;
+}
+footer #footerWrap nav ul{
+	list-style:none;
+}
+footer #footerWrap nav ul li{
+	color:#FFF;
+	display:inline;
+}
+footer #footerWrap nav ul #liRD{
+	color:#FFF;
+	display:inline;
+}
+footer #footerWrap nav ul #liRD a {
+	color:#b97234;
+}
+footer #footerWrap nav ul li a{
+	color: #fff;
+	padding: 0 20px;
+	text-decoration: none;
+}
+/*Contact Form*/
+#contactForm {
+	width: 100%;
+}
+#contactForm .fillin{
+	width: 385px;
+	border: 1px solid #D1D19F ;
+	border-radius: 5px;
+	margin: 10px 0px;
+	font-size:14px;
+	height: 30px;
+	padding: 0 10px
+}
+#contactForm .fillin2 {
+	width: 385px;
+	border: 1px solid #D1D19F ;
+	border-radius: 5px;
+	margin: 10px 0px;
+	font-size:14px;
+	height: 150px;
+	padding: 0 10px
+}
+#contactForm button {
+	background: #D1D19F ;
+	border: 1px solid #b97234;
+	border-radius: 5px;
+	width: 100px;
+	font-size:24px;
+	font-weight:900;
+	color:#FFF;
+	padding: 5px;
+	cursor:pointer;
+	-webkit-transition: all .4s ease-in 0s;
+	-moz-transition: all .4s ease-in 0s;
+	-ms-transition: all .4s ease-in 0s;
+	-o-transition: all .4s ease-in 0s;
+	transition: all .4s ease-in 0s;
+}
+#contactForm button:hover {
+	background: #b97234;
+	border: 1px solid #D1D19F ;
+	color:#fff;
+}
+/*Portfolio*/
+#ekportfolio {
+	width: 600px;
+	margin-top: 20px;
+}
+#ekportfolio img{
+	width: 110px;
+	border-radius: 20px;
+	overflow:hidden;
+	margin: -1px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	-webkit-transition: all .4s ease-in 0s;
+	-moz-transition: all .4s ease-in 0s;
+	-ms-transition: all .4s ease-in 0s;
+	-o-transition: all .4s ease-in 0s;
+	transition: all .4s ease-in 0s;
+}
+#ekportfolio a{
+	text-decoration:none;
+	margin-right: 7px;
+}
+#ekportfolio img:hover {
+	background:#D1D19F ;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+/*slider*/
+#slideShow {
+	width: 600px;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+.slider {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.slider li {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+.slider li:first-child {
+	position: relative;
+	display: block;
+	float: left;
+}
+.slider img {
+	background: #D1D19F ;
+	display: block;
+	height: auto;
+	float: left;
+	width: 590px;
+	padding: 5px;
+	border-radius: 1em 10em 1em 10em;
+}
+
